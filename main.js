@@ -29,7 +29,7 @@ app.engine('hbs', handlebars({ defaultLayout: 'default.hbs' }))
 app.set('view engine', 'hbs')
 
 // application
-app.use('/v1', router)
+app.use(router)
 
 // start the server
 pool.getConnection()
